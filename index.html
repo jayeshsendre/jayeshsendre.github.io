@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jayesh Sendre portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/860aab195c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="navcontainer">
+        <nav>
+          <img
+            src="images/jayesh.png"
+            alt="loading............."
+            class="logo"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>Hello, I'm <span>Jayesh</span></h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------code of about page---------------------------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/20230324_163817.jpg" alt="Loading....." />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              I am looking for a challenging post in reputed company where it
+              would be pleasure to use my skills and knowledge for the benefits
+              of the company.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front-end</span><br />ReactJS, Redux, Hooks, JavaScript,
+                  HTML, CSS, Bootstrap, JQuery
+                </li>
+                <li><span>Back-end</span><br />Java, JDBC, C, C++</li>
+                <li><span>Database</span><br />Working Knowledge of MySQL</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>July 2022-Dec 2022</span><br />Internship in ReactJS and
+                  Java Development from CodeBetter, Indore
+                </li>
+                <li>
+                  <span>Jun 2022-Jul 2022</span><br />Internship in Java and
+                  Python from MSME tool room, Indore
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020-Present</span><br />B.Tech(CSE) from Prestige
+                  Institute of Engineering, Management and Research
+                  (PIEMR),Indore <br />8.72 CGPA
+                </li>
+                <li>
+                  <span>2019-2020</span><br />Higher Secondary Certificate from
+                  Daisy Dales Sr. Sec. School,Indore <br />6.14 CGPA
+                </li>
+                <li>
+                  <span>2016-2017</span><br />Secondary School Certificate from
+                  Daisy Dales Sr. Sec. School,Indore <br />8.88 CGPA
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------code of about page ends here---------------------------- -->
+
+    <!-- ---------------------------portfolio----------------------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Screenshot (187).png" alt="" />
+            <div class="layer">
+              <h3>To Do List</h3>
+              <p>
+                A user can Add, Remove, Remove All its task to do according to
+                it at a run time. Technology used- ReactJS, Redux, Hooks, JSON,
+                HTML, CSS
+              </p>
+              <a href="https://todolistbyjayesh.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Screenshot (188).png" alt="" />
+            <div class="layer">
+              <h3>Quiz Manager</h3>
+              <p>
+                It is Dynamic quiz application where user can take quiz ,score
+                will be updated at runtime , at the end Result will be
+                displayed. Technology used- ReactJS, Hooks, HTML, CSS
+              </p>
+              <a href="https://quizmanager.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Screenshot (189).png" alt="" />
+            <div class="layer">
+              <h3>Shopping Cart</h3>
+              <p>
+                I have used API to fetch data . A user can get real time data. A
+                user can also see details of each product. Technology used-
+                ReactJS, Redux, Hooks, axios BrowserRouter, Semantic UI, HTML
+              </p>
+              <a href="https://github.com/jayeshsendre/Shopping_cart"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/jayeshsendre" class="btn"
+          >See more on GitHub</a
+        >
+      </div>
+    </div>
+
+    <!-- -------------------------Contact---------------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>jayeshsendre20@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+91 8871920501</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100093595423487"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://twitter.com/sendre_jayesh?t=5eGkaqsL-eZHnPP_QKCx7w&s=09"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/jayeshsendre"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/jayesh-sendre-070b50228"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/Jayesh_Sendre_Resume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          copyright &#169; Made by Jayesh Sendre
+          <i class="fa-sharp fa-solid fa-computer"></i>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwnvVXMV71F1f-k9UgoNcJRI3mt8bunjRn35-IqyTKSsLCZL1rANptZigZE6AygS4rnDQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
